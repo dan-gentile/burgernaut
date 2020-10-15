@@ -85,6 +85,10 @@ footer {
     text-align: center;
 }
 
+.icon {
+    margin-left: 20px;
+}
+
 #submit {
     background-color: #592C6F;
     height: 40px;
