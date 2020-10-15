@@ -3,7 +3,11 @@
   <img class="logo" src="../assets/images/logo.png" alt="astronaut eating a burger" width="360px" height="360px">
 </div>
 
-<h3 class="queue-headline">Burger Queue</h3>
+{{#if burger}}
+<div class="queue-headline-box">
+  <h3>BURGER QUEUE</h3>
+</div>
+
 <div class="queue">
   
   <div class="queue-box">
@@ -21,9 +25,13 @@
   </div>
 
 </div>
+{{/if}}
 
+{{#if burger}}
+<div class="spent-headline-box">
+  <h3>SPENT FUEL</h3>
+</div>
 
-<h3 class="spent-headline">Spent Fuel</h3>
 <div class="spent">
   
   <div class="spent-box">
@@ -42,12 +50,15 @@
 </div>
 </div>
 
+{{/if}}
+
+
 <div class="create">
   <div class="create-box">
-<h3>Eat A Burger!</h3>
+<h3>EAT A BURGER!</h3>
 <form class="create-form">
   <div class="form-group">
-    <input type="text" id="burger" name="name" placeholder="Burger">
+    <input type="text" id="burger" name="name" placeholder="NAME A BURGER" onkeyup="this.value = this.value.toUpperCase();">
   </div>
   <button id="submit" type="submit">Submit</button>
 </form>

@@ -38,7 +38,7 @@ body {
     background-color: #F8F4FF;
     display: grid;
     grid-template-columns: 1fr 320px minmax(360px, 1fr) 320px 1fr;
-    grid-template-rows: 340px 20px minmax(400px, 1fr) 240px 80px;
+    grid-template-rows: 340px 20px 1fr 240px 80px;
     font-family: dinosaur, sans-serif;
 }
 
@@ -117,12 +117,15 @@ footer {
     background-color: #86C21F;
 }
 
-.queue-headline {
+.queue-headline-box {
     grid-column-start: 2;
     grid-column-end: span 1;
     grid-row-start: 2;
     grid-row-end: span 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .queue {
@@ -169,12 +172,15 @@ footer {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
-.spent-headline {
+.spent-headline-box {
     grid-column-start: 4;
     grid-column-end: span 1;
     grid-row-start: 2;
     grid-row-end: span 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .spent {
@@ -216,8 +222,8 @@ footer {
 
 @media screen and (max-width: 1000px) {
     body {
-        grid-template-columns: 1fr minmax(360px, 1fr) 1fr;
-        grid-template-rows: 360px 140px 20px minmax(400px, 1fr) 20px minmax(400px, 1fr) 20px 80px;
+        grid-template-columns: 1fr minmax(320px, 1fr) 1fr;
+        grid-template-rows: 360px 140px 60px 1fr 60px 1fr 20px 80px;
     }
     .logo-box {
         grid-column-start: 2;
@@ -231,28 +237,32 @@ footer {
         grid-row-start: 2;
         grid-row-end: span 1;
     }
-    .queue-headline {
+    .queue-headline-box {
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 3;
         grid-row-end: span 1;
     }
     .queue {
+        margin-top: 0;
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 4;
         grid-row-end: span 1;
+        padding-bottom: 2px;
     }
-    .spent-headline {
+    .spent-headline-box {
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 5;
         grid-row-end: span 1;
     }
     .spent {
+        margin-top: 0;
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 6;
         grid-row-end: span 1;
+        padding-bottom: 2px;
     }
 }

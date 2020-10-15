@@ -1,18 +1,6 @@
 // Import MySQL connection.
 const connection = require("./connection");
 
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
-// ["?", "?", "?"].toString() => "?,?,?";
-function printQuestionMarks(num) {
-    let arr = [];
-
-    for (var i = 0; i < num; i++) {
-        arr.push("?");
-    }
-
-    return arr.toString();
-}
-
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
     let arr = [];
