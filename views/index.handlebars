@@ -1,9 +1,9 @@
 
-
+<div class="logo-box">
   <img class="logo" src="../assets/images/logo.png" alt="astronaut eating a burger" width="360px" height="360px">
+</div>
 
-
-{{!-- <h3>Burger Queue</h3> --}}
+<h3 class="queue-headline">Burger Queue</h3>
 <div class="queue">
   
   <div class="queue-box">
@@ -23,15 +23,16 @@
 </div>
 
 
+<h3 class="spent-headline">Spent Fuel</h3>
 <div class="spent">
   
   <div class="spent-box">
-    {{!-- <h3>Spent Fuel</h3> --}}
+
 <ul>
    {{#each burger}}
     {{#if eaten}}
     <li class="spent-item">
-      <img src="../assets/images/burgerEaten.png" alt="burger eaten icon" width="76px" height="90px">
+      <img src="../assets/images/burgerEaten.png" alt="burger eaten icon" width="43px" height="50px">
 	        <h4>{{name}}</h4>
           <i class="fad fa-dumpster delete" data-id="{{id}}"></i>
     </li>
