@@ -16,14 +16,27 @@ $(function() {
             data: newEatenState
         }).then(
             function() {
-                // console.log("changed sleep to", newSleep);
+
                 // Reload the page to get the updated list
                 location.reload();
             }
         );
     });
 
+    $(".delete").on("click", function(event) {
+        // Get the ID from the button.
+        let id = $(this).data("id");
 
+        // Send the DELETE request.
+        $.ajax("/api/burger/" + id, {
+            type: "DELETE"
+        }).then(
+            function() {
+                // Reload the page to get the updated list
+                location.reload();
+            }
+        );
+    });
 
     $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
