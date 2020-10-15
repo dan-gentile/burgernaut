@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require("../config/connection.js");
+const connection = require("./connection");
 
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
@@ -47,9 +47,7 @@ const orm = {
         });
     },
     create: function(table, cols, vals, cb) {
-        let queryString = `INSERT INTO ${table} (${cols.toString()}) VALUES (${printQuestionMarks(val.length)})`;
-
-        console.log(queryString);
+        let queryString = `INSERT INTO ${table} (${cols}) VALUES (?);`;
 
         connection.query(queryString, vals, function(err, result) {
             if (err) throw err;
@@ -59,24 +57,12 @@ const orm = {
     // An example of objColVals would be {name: panther, sleepy: true}
     update: function(table, objColVals, condition, cb) {
         let queryString = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`
-
-        console.log(queryString);
-
         connection.query(queryString, function(err, result) {
             if (err) throw err;
             cb(result);
         });
     },
-
-    delete: function(table, condition, cb) {
-        let queryString = `DELETE FROM ${table} WHERE id = ${condition}`;
-
-        connection.query(queryString, function(err, result) {
-            if (err) throw err;
-            cb(result);
-        });
-    }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
