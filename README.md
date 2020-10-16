@@ -1,3 +1,9 @@
+
+<p align="center">
+<img width="360" alt="astronaut eating burger" src="https://user-images.githubusercontent.com/68626350/96198398-92fb5800-0f09-11eb-85be-a8272957f955.png">
+</p>
+
+
 # BurgerNaut
 
 ![Contents](https://img.shields.io/github/languages/top/dan-gentile/burgernaut)
@@ -5,10 +11,6 @@
 ![License](https://img.shields.io/github/license/dan-gentile/burgernaut)
 
 ## Description 
-
-<p align="center">
-<img width="360" alt="astronaut eating burger" src="https://user-images.githubusercontent.com/68626350/96198398-92fb5800-0f09-11eb-85be-a8272957f955.png">
-</p>
 
 BurgerNaut is a Full Stack, CRUD web application that allows the user to input a burger they'd like to eat, then eat it and then throw it in the trash. The server is built using node, express and handlebars(for templating) and custom built ORMs. The database is built using MySQL and front end Javascipt using jQuery. Styling with CSS. 
 
