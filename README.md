@@ -52,15 +52,17 @@ Nothing to install! To use the app please click on the link below!
 
 <p align="center">
 -- Landing Page -- <br>
-<img width="621" alt="Screen Shot 2020-10-15 at 5 19 01 PM" src="https://user-images.githubusercontent.com/68626350/96202882-474eab80-0f15-11eb-8355-6fed380351f2.png">
+<img width="621" alt="Landing Screenshot" src="https://user-images.githubusercontent.com/68626350/96202882-474eab80-0f15-11eb-8355-6fed380351f2.png">
 </p>
 <p align="center">
 -- Full Rendered -- <br>
-<img width="1208" alt="Screen Shot 2020-10-15 at 5 19 22 PM" src="https://user-images.githubusercontent.com/68626350/96202931-7402c300-0f15-11eb-8d9a-0f523bca3bfe.png">
+<img width="1292" alt="Full Rendered Screenshot" src="https://user-images.githubusercontent.com/68626350/96268339-cc6dab00-0f7d-11eb-9d35-0ec68531d801.png">
+
 </p>
 <p align="center">
 -- Mobile --    <br>
-<img width="375" alt="Screen Shot 2020-10-15 at 6 28 46 PM" src="https://user-images.githubusercontent.com/68626350/96202965-854bcf80-0f15-11eb-8c95-732d8b759b8c.png">
+<img width="270" alt="Mobile Screenshot" src="https://user-images.githubusercontent.com/68626350/96268263-b102a000-0f7d-11eb-9e3e-36990b95d6bb.png">
+
 </p>
 
 ## Code Snippets

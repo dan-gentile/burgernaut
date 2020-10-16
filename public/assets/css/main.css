@@ -135,21 +135,14 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #FFF;
-    border-radius: 8px;
-    border-style: solid;
-    border-color: #371A45;
-    margin-top: 15px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
-    overflow: auto;
-    margin-bottom: 40px;
+    margin: 15px 0 40px 0;
 }
 
 .queue-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 314px;
+    width: 320px;
     height: 70px;
     padding: 0 0 0 5px;
     margin-top: 2px;
@@ -192,14 +185,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    border-radius: 8px;
-    border-style: solid;
-    border-color: #371A45;
-    margin-top: 15px;
-    background-color: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
-    overflow: auto;
-    margin-bottom: 40px;
+    margin: 15px 0 40px 0;
 }
 
 .spent-item {
@@ -207,7 +193,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #E0D3F8;
-    width: 314px;
+    width: 320px;
     height: 70px;
     padding: 0 5px 0 5px;
     margin-top: 2px;
@@ -226,7 +212,7 @@ footer {
 @media screen and (max-width: 1000px) {
     body {
         grid-template-columns: 1fr 320px 1fr;
-        grid-template-rows: 360px 140px 60px minmax(360px, 1fr) 60px minmax(360px, 1fr) 20px 80px;
+        grid-template-rows: 360px 140px 60px 1fr 60px 1fr 20px 80px;
     }
     footer {
         grid-column-start: 1;
