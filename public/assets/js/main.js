@@ -42,25 +42,24 @@ $(function() {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
-
         let newBurger = {
             name: $("#burger").val().trim(),
         };
-        // Send the POST request.
-        $.ajax("/api/burgers", {
-            type: "POST",
-            data: newBurger
-        }).then(
-            function() {
-
-                // Reload the page to get the updated list
-                location.reload();
-
-
-
-            }
-        );
-
+        console.log(newBurger.name)
+        if (newBurger.name === "") {
+            alert("Please name you're burger")
+        } else {
+            // Send the POST request.
+            $.ajax("/api/burgers", {
+                type: "POST",
+                data: newBurger
+            }).then(
+                function() {
+                    // Reload the page to get the updated list
+                    location.reload();
+                }
+            );
+        }
     });
 
 });
