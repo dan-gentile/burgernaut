@@ -12,7 +12,10 @@
 
 ## Description 
 
-BurgerNaut is a Full Stack, CRUD web application that allows the user to input a burger they'd like to eat, then eat it and then throw it in the trash. The server is built using node, express and handlebars(for templating) and custom built ORMs. The database is built using MySQL and front end Javascipt using jQuery. Styling with CSS. 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/68626350/96203217-276bb780-0f16-11eb-8aad-3456d662ae8c.gif)
+
+
+BurgerNaut is a Full Stack, CRUD web application that allows the user to input a burger they'd like to eat, then eat it and then throw it in the trash. The server is built using node, express and handlebars(for templating) and custom built ORMs. The database is built using MySQL and front end Javascipt using jQuery. Styling with CSS. This app is fully mobile responsive.
 
 Check it out! <https://burgernaut.herokuapp.com/>
 
@@ -23,6 +26,7 @@ Check it out! <https://burgernaut.herokuapp.com/>
 - [Technologies](#technologies)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
+- [Screen Shots](#screenshots)
 - [Code Snippets](#code-snippets)
 - [License](#license)
 - [Contributing](#contributing)
@@ -43,6 +47,21 @@ Nothing to install! To use the app please click on the link below!
 
 <https://burgernaut.herokuapp.com/>
 
+
+## Screen Shots
+
+<p align="center">
+-- Landing Page -- <br>
+<img width="621" alt="Screen Shot 2020-10-15 at 5 19 01 PM" src="https://user-images.githubusercontent.com/68626350/96202882-474eab80-0f15-11eb-8355-6fed380351f2.png">
+</p>
+<p align="center">
+-- Full Rendered -- <br>
+<img width="1208" alt="Screen Shot 2020-10-15 at 5 19 22 PM" src="https://user-images.githubusercontent.com/68626350/96202931-7402c300-0f15-11eb-8d9a-0f523bca3bfe.png">
+</p>
+<p align="center">
+-- Mobile --    <br>
+<img width="375" alt="Screen Shot 2020-10-15 at 6 28 46 PM" src="https://user-images.githubusercontent.com/68626350/96202965-854bcf80-0f15-11eb-8c95-732d8b759b8c.png">
+</p>
 
 ## Code Snippets
 Routing to update burger status
