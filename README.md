@@ -12,7 +12,7 @@
 
 ## Description 
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/68626350/96203217-276bb780-0f16-11eb-8aad-3456d662ae8c.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/68626350/96268894-751c0a80-0f7e-11eb-9688-0d7c945a85d0.gif)
 
 
 BurgerNaut is a Full Stack, CRUD web application that allows the user to input a burger they'd like to eat, then eat it and then throw it in the trash. The server is built using node, express and handlebars(for templating) and custom built ORMs. The database is built using MySQL and front end Javascipt using jQuery. Styling with CSS. This app is fully mobile responsive.
