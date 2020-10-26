@@ -8,7 +8,7 @@ const burger = require("../models/burger");
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
     burger.all(function(data) {
-        let hbsObject = { burger: data };
+        const hbsObject = { burger: data };
         res.render("index", hbsObject);
     });
 });
@@ -21,9 +21,9 @@ router.post("/api/burgers", function(req, res) {
 });
 
 router.put("/api/burger/:id", function(req, res) {
-    let condition = "id = " + req.params.id;
+    const findId = "id = " + req.params.id;
 
-    burger.update({ eaten: req.body.eaten }, condition, function(result) {
+    burger.update({ eaten: req.body.eaten }, findId, function(result) {
         if (result.changedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404
             return res.status(404).end();
@@ -34,9 +34,9 @@ router.put("/api/burger/:id", function(req, res) {
 });
 
 router.delete("/api/burger/:id", function(req, res) {
-    let condition = req.params.id;
+    const deleteId = req.params.id;
 
-    burger.delete(condition, function(result) {
+    burger.delete(deleteId, function(result) {
         if (result.affectedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404
             return res.status(404).end();

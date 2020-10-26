@@ -1,17 +1,15 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-eaten").on("click", function(event) {
-        let id = $(this).data("id");
-        let newEaten = $(this).data("neweat");
+        const changeEatenId = $(this).data("id");
+        const isNewEaten = $(this).data("neweat");
 
-        console.log(newEaten)
-
-        let newEatenState = {
-            eaten: newEaten
+        const newEatenState = {
+            eaten: isNewEaten
         };
 
         // Send the PUT request.
-        $.ajax("/api/burger/" + id, {
+        $.ajax("/api/burger/" + changeEatenId, {
             type: "PUT",
             data: newEatenState
         }).then(
@@ -25,10 +23,10 @@ $(function() {
 
     $(".delete").on("click", function(event) {
         // Get the ID from the button.
-        let id = $(this).data("id");
+        const deleteId = $(this).data("id");
 
         // Send the DELETE request.
-        $.ajax("/api/burger/" + id, {
+        $.ajax("/api/burger/" + deleteId, {
             type: "DELETE"
         }).then(
             function() {
@@ -42,10 +40,10 @@ $(function() {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
-        let newBurger = {
+        const newBurger = {
             name: $("#burger").val().trim(),
         };
-        console.log(newBurger.name)
+
         if (newBurger.name === "") {
             alert("Please name you're burger")
         } else {
